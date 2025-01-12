@@ -1,0 +1,15 @@
+nav.navbar {
+  background-color: var(--secondary-color);
+}
+
+a.nav-dropdown {
+  cursor: pointer;
+}
+
+a.nav-link {
+  color: var(--primary-color)
+}
+
+a.nav-link:hover {
+  background-color: var(--accent-color)
+}
