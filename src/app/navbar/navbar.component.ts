@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgbDropdown, NgbDropdownItem, NgbDropdownMenu, NgbDropdownToggle} from '@ng-bootstrap/ng-bootstrap';
+import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,9 @@ import {NgbDropdown, NgbDropdownItem, NgbDropdownMenu, NgbDropdownToggle} from '
     NgbDropdown,
     NgbDropdownMenu,
     NgbDropdownItem,
-    NgbDropdownToggle
+    NgbDropdownToggle,
+    RouterLinkActive,
+    RouterLink
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
@@ -17,4 +20,6 @@ export class NavbarComponent {
   notImplemented() {
     alert("not Implemented");
   }
+
+  protected readonly history = history;
 }

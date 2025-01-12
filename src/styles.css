@@ -5,4 +5,11 @@
   --secondary-color: #80CDEC;
   --accent-color: #F9E03a;
   --neutral-color: #FFF;
+  --bs-navbar-brand-font-size: 2.5rem !important;
 }
+
+.active-link {
+  background-color: var(--accent-color) !important;
+  color: var(--primary-color) !important;
+}
+

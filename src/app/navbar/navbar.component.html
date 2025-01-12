@@ -23,9 +23,9 @@
             Über uns
           </a>
           <div ngbDropdownMenu aria-labelledby="dropdownToggle">
-            <button ngbDropdownItem>Unsere Firmengeschichte</button>
-            <button ngbDropdownItem (click)="notImplemented()">Impressum</button>
-            <button ngbDropdownItem (click)="notImplemented()">Kontakt</button>
+            <a ngbDropdownItem routerLink="/history" routerLinkActive="active-link">Unsere Firmengeschichte</a>
+            <a ngbDropdownItem (click)="notImplemented()">Impressum</a>
+            <a ngbDropdownItem (click)="notImplemented()">Kontakt</a>
           </div>
         </div>
       </li>
