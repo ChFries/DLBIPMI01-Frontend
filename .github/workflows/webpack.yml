@@ -28,6 +28,6 @@ jobs:
       run: | 
         npm install
         npm run build
-        mv /home/runner/work/DLBIPMI01-Frontend/docs/browser/* home/runner/work/DLBIPMI01-Frontend/docs/
-        cp /home/runner/work/DLBIPMI01-Frontend/docs/index.html home/runner/work/DLBIPMI01-Frontend/docs/404.html
+        mv ./home/runner/work/DLBIPMI01-Frontend/docs/browser/* home/runner/work/DLBIPMI01-Frontend/docs/
+        cp ./home/runner/work/DLBIPMI01-Frontend/docs/index.html home/runner/work/DLBIPMI01-Frontend/docs/404.html
         
