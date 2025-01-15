@@ -1,0 +1,30 @@
+name: Merge to gh-pages and build&deploy
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set Git config
+      run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
+
+    - name: Build
+      run: |
+        git fetch --unshallow
+        git checkout gh-pages
+        git pull
+        git merge --no-ff master -m "Auto merge master to gh-pages branch"
+        git push
+        npm install
+        npm build --output-path docs --base-href /DLBIPMI01-Frontend/
+        mv /docs/browser/* /docs/
+        cp /docs/index.html /docs/404.html
+        
