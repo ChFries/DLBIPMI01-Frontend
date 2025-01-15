@@ -1,4 +1,4 @@
-name: NodeJS with Webpack
+name: Merge to gh-pages and build&deploy
 
 on:
   push:
