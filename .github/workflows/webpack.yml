@@ -10,6 +10,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    
+    - name: Set Git config
+      run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "Github Actions"
 
     - name: Build
       run: |
