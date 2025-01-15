@@ -24,7 +24,7 @@ jobs:
         git merge --no-ff master -m "Auto merge master to gh-pages branch"
         git push
         npm install
-        npm build --output-path docs --base-href /DLBIPMI01-Frontend/
+        npm run build --output-path docs --base-href /DLBIPMI01-Frontend/
         mv /docs/browser/* /docs/
         cp /docs/index.html /docs/404.html
         
