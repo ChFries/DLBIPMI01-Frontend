@@ -1,4 +1,4 @@
-name: Merge to gh-pages and build&deploy
+name: Merge to gh-pages and build
 
 on:
   push:
@@ -16,15 +16,18 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "Github Actions"
 
-    - name: Build
+    - name: Backmerge to gh-pages
       run: |
         git fetch --unshallow
         git checkout gh-pages
         git pull
         git merge --no-ff master -m "Auto merge master to gh-pages branch"
         git push
+
+    - name: Build 
+      run: | 
         npm install
         npm run build
-        mv /docs/browser/* /docs/
-        cp /docs/index.html /docs/404.html
+        mv home/runner/work/DLBIPMI01-Frontend/docs/browser/* home/runner/work/DLBIPMI01-Frontend/docs/
+        cp home/runner/work/DLBIPMI01-Frontend/docs/index.html home/runner/work/DLBIPMI01-Frontend/docs/404.html
         
