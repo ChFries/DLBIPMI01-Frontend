@@ -1,0 +1,33 @@
+name: NodeJS with Webpack
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Build
+      run: |
+        git fetch --unshallow
+        git checkout gh-pages
+        git pull
+        git merge --no-ff master -m "Auto merge master to gh-pages branch"
+        npm install
+        npm build --output-path docs --base-href /DLBIPMI01-Frontend/
+        mv /docs/browser/* /docs/
+        cp /docs/index.html /docs/404.html
+        
