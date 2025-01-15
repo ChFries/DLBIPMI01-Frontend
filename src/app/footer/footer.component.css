@@ -1,0 +1,17 @@
+footer {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+footer div.row {
+  background-color: var(--secondary-color);
+}
+
+.form-control {
+  background-color: var(--accent-color);
+}
+
+
