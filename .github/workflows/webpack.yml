@@ -31,7 +31,7 @@ jobs:
         git fetch --unshallow
         git checkout gh-pages
         git pull
-        git merge -X ours --no-ff master -m "Auto merge master to gh-pages branch"
+        git merge -X theirs --no-ff master -m "Auto merge master to gh-pages branch"
         git push
 
         
