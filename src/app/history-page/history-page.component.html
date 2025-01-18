@@ -1,21 +1,26 @@
 <div class="container">
   <app-header-element/>
-  <div class="row">
-    <div class="col-lg order-lg-last" style="background-color: green; min-height: 300px;"></div>
-    <div class="col-lg order-lg-first" style="background-color: red; min-height: 300px;"></div>
-  </div>
-  <div class="row">
-    <div class="col-lg" style="background-color: green; min-height: 300px;"></div>
+  <div class="row mt-5">
     <div class="col-lg">
-      <app-story-element [alignRight]=true [year]="2024" />
+      <img src="section-1.webp" class="img-fluid" style="border-radius: 50%;" alt="">
     </div>
-  </div>
-  <div class="row">
-    <div class="col-lg" style="background-color: green; min-height: 300px;"></div>
-    <div class="col-lg" style="background-color: red; min-height: 300px;"></div>
-  </div>
-  <div class="row">
-    <div class="col-lg" style="background-color: green; min-height: 300px;"></div>
-    <div class="col-lg" style="background-color: red; min-height: 300px;"></div>
+    <div class="col-lg">
+      <app-story-element [alignRight]=true [year]=first_segment_year [subheader]=first_segment_subheader
+                         [textbodyLeft]=first_segment_text_0 [textbodyRight]=first_segment_text_1></app-story-element>
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg" style="background-color: green; min-height: 300px;"></div>
+      <div class="col-lg">
+        <app-story-element [alignRight]=true [year]="2024"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg" style="background-color: green; min-height: 300px;"></div>
+      <div class="col-lg" style="background-color: red; min-height: 300px;"></div>
+    </div>
+    <div class="row">
+      <div class="col-lg" style="background-color: green; min-height: 300px;"></div>
+      <div class="col-lg" style="background-color: red; min-height: 300px;"></div>
+    </div>
   </div>
 </div>
