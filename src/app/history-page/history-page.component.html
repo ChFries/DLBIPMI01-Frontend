@@ -9,9 +9,11 @@
                          [textbodyLeft]=first_segment_text_0 [textbodyRight]=first_segment_text_1></app-story-element>
     </div>
     <div class="row mt-5">
-      <div class="col-lg" style="background-color: green; min-height: 300px;"></div>
       <div class="col-lg">
-        <app-story-element [alignRight]=true [year]="2024"/>
+        <app-story-element [alignRight]=true [year]=second_segment_year [subheader]=second_segment_subheader [textbodyLeft]="second_segment_text_0" [textbodyRight]="second_segment_text_1"/>
+      </div>
+      <div class="col-lg content-element">
+        <app-accordion-element/>
       </div>
     </div>
     <div class="row">
