@@ -1,0 +1,14 @@
+h1 {
+  font-size: 56px;
+  color: var(--primary-color);
+}
+h2 {
+  font-size: 32px;
+  color: var(--secondary-color);
+}
+
+@media (min-width: 992px) {
+  .row {
+    min-height: 200px;
+  }
+}
