@@ -1,0 +1,30 @@
+
+
+h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.align-right {
+  text-align: end;
+}
+
+p {
+  font-size: 1.5rem;
+  color: var(--primary-color)
+}
+
+@media (max-width: 992px) {
+  h1 {
+    text-align: center !important;
+  }
+}
+
