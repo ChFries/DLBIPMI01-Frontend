@@ -1,0 +1,9 @@
+h3 {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+img {
+  max-height: 356px !important;
+  min-width: 100%;
+}

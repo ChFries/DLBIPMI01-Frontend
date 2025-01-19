@@ -14,7 +14,7 @@ export class StoryElementComponent {
   @Input('alignRight')
   isRightColumn: boolean = false;
   @Input('year')
-  year: number = 2024;
+  year: string = "2024";
   @Input('subheader')
   subheader: string = "...das Imperium schlägt zurück" ;
 
