@@ -5,24 +5,50 @@
       <img src="section-1.webp" class="img-fluid" style="border-radius: 50%;" alt="">
     </div>
     <div class="col-lg">
-      <app-story-element [alignRight]=true [year]=first_segment_year [subheader]=first_segment_subheader
+      <app-story-element [alignment]="'right'" [year]=first_segment_year [subheader]=first_segment_subheader
                          [textbodyLeft]=first_segment_text_0 [textbodyRight]=first_segment_text_1></app-story-element>
     </div>
     <div class="row mt-5">
       <div class="col-lg">
-        <app-story-element [year]=second_segment_year [subheader]=second_segment_subheader [textbodyLeft]="second_segment_text_0" [textbodyRight]="second_segment_text_1"/>
+        <app-story-element [year]=second_segment_year [subheader]=second_segment_subheader
+                           [textbodyLeft]="second_segment_text_0" [textbodyRight]="second_segment_text_1"/>
       </div>
       <div class="col-lg content-element">
         <app-accordion-element/>
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-lg" style="background-color: green; min-height: 300px;"></div>
-      <div class="col-lg" style="background-color: red; min-height: 300px;"></div>
+      <div class="col-lg justify-content-center">
+        <app-story-element [alignment]="'center'" [year]=third_segment_year [subheader]=third_segment_subheader
+                           [textbodyLeft]="third_segment_text_0" textbodyRight=""/>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md">
+        <div class="row">
+          <div class="col-auto mt-2">
+            <app-cards-element [imgUrl]=leidenschaft_url [textBody]=leidenschaft_body [title]="leidenschaft_title"/>
+          </div>
+          <div class="col-auto mt-2">
+            <app-cards-element [imgUrl]=offenheit_url [textBody]=offenheit_body [title]="offenheit_title"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="row">
+          <div class="col-auto mt-2">
+            <app-cards-element [imgUrl]=verantwortung_url [textBody]=verantwortung_body [title]="verantwortung_title"/>
+          </div>
+          <div class="col-auto mt-2">
+            <app-cards-element [imgUrl]=exzellenz_url [textBody]=exzellenz_body [title]="exzellenz_title"/>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="row mt-5">
       <div class="col-lg">
-        <app-story-element [year]=fourth_segment_year [subheader]=fourth_segment_subheader [textbodyLeft]="fourth_segment_text_0" [textbodyRight]="fourth_segment_text_1"/>
+        <app-story-element [year]=fourth_segment_year [subheader]=fourth_segment_subheader
+                           [textbodyLeft]="fourth_segment_text_0" [textbodyRight]="fourth_segment_text_1"/>
       </div>
       <div class="col-lg content-element align-self-center">
         <app-carousel-element/>

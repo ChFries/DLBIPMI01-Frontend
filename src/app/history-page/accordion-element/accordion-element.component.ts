@@ -25,7 +25,7 @@ export class AccordionElementComponent{
   accordion: any;
 
   rahjeet_img: string = "rahjeet_profile.jpg";
-  rahjeet_header: string = "rahjeet";
+  rahjeet_header: string = "Rahjeet";
   rahjeet_title: string ="Lead Consultant";
   rahjeet_body_0: string = "Rahjeet stammt aus Frankfurt am Main und studierte Betriebswirtschaftslehre mit dem Schwerpunkt Unternehmensführung. Während seines Studiums arbeitete er als Werkstudent bei einem internationalen Beratungsunternehmen, wo er seine Leidenschaft für Consulting entdeckte.";
   rahjeet_body_1: string = "Nach dem Abschluss seines Studiums verbrachte er zwei Jahre in einem Start-up, in dem er Prozesse optimierte und erste Projekte leitete. Diese Erfahrung machte ihn zu einem gefragten jungen Berater. Mit dem Ziel, in einem innovativen und dynamischen Umfeld zu arbeiten, war er einer der ersten, der sich dem Team der MF-Consulting GmbH anschloss. Seit sechs Jahren leitet Rahjeet den damals neue geschaffenen Bereich European Consulting & Acquisition"

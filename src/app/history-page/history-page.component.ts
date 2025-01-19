@@ -10,6 +10,7 @@ import {
 } from '@ng-bootstrap/ng-bootstrap';
 import {AccordionElementComponent} from './accordion-element/accordion-element.component';
 import {CarouselElementComponent} from './carousel-element/carousel-element.component';
+import {CardsElementComponent} from './cards-element/cards-element.component';
 
 @Component({
   selector: 'app-history-page',
@@ -23,7 +24,8 @@ import {CarouselElementComponent} from './carousel-element/carousel-element.comp
     NgbAccordionCollapse,
     NgbAccordionBody,
     AccordionElementComponent,
-    CarouselElementComponent
+    CarouselElementComponent,
+    CardsElementComponent
   ],
   templateUrl: './history-page.component.html',
   styleUrl: './history-page.component.css'
@@ -39,6 +41,28 @@ export class HistoryPageComponent {
   second_segment_subheader: string = "Lasst die Korken knallen!";
   second_segment_text_0: string ="Mit diesem Wissen und einer klaren Vision gründete er 2007 die MF-Consulting GmbH in Neumarkt in der Oberpfalz. Zu Beginn bestand das Unternehmen aus fünf hochmotivierten Mitarbeitern, die gemeinsam an der Umsetzung der Vision arbeiteten, Unternehmen durch innovative Lösungen zum Erfolg zu führen.";
   second_segment_text_1: string ="Lerne unsere fünf OGs kennen"
+
+  third_segment_year: string = "2009";
+  third_segment_subheader: string = "Geld ist nicht alles";
+  third_segment_text_0: string ="Die MF-Consulting GmbH stellte ihre offiziellen Firmenwerte vor – Verantwortung, Leidenschaft, Offenheit und Exzellenz. Diese Werte prägen seither das Handeln des Unternehmens und bilden die Grundlage für den Erfolg.";
+
+  leidenschaft_url="leidenschaft.png";
+  leidenschaft_title ="Leidenschaft – Der Treibstoff unseres Erfolgs";
+  leidenschaft_body ="Leidenschaft ist der Herzschlag unseres Unternehmens und der Antrieb, der uns jeden Tag aufs Neue inspiriert, das Beste zu geben. Sie ist der Funke, der unsere Kreativität entfacht, uns herausfordert, innovative Lösungen zu entwickeln, und uns mit Energie und Entschlossenheit an unsere Ziele führt.";
+
+  offenheit_url="offenheit.png";
+  offenheit_title="Offenheit - Überblick statt Tunnelblick";
+  offenheit_body="Offenheit ist ein zentraler Wert unserer Unternehmenskultur und bildet die Grundlage für unsere Zusammenarbeit und Innovation. Wir verstehen Offenheit als die Fähigkeit, aktiv zuzuhören, unterschiedliche Perspektiven zu respektieren und neuen Ideen mit Neugier und Aufgeschlossenheit zu begegnen.";
+
+  verantwortung_url="verantwortung.png";
+  verantwortung_title="Verantwortung - Partnerschaft statt One-Night Stand";
+  verantwortung_body="Wir verstehen Verantwortung als Verpflichtung, nachhaltig und ethisch zu agieren – gegenüber unseren Mitarbeitern, Kunden, Partnern und der Umwelt. Dies bedeutet, Entscheidungen bewusst zu treffen und zu jedem Zeitpunkt das Wohl der Gemeinschaft im Blick zu behalten.";
+
+  exzellenz_url="exzellenz.png";
+  exzellenz_title="Exzellenz - Weil auch guter Pfusch nur Pfusch ist";
+  exzellenz_body="Für uns bedeutet Exzellenz stets nach höchster Qualität und Spitzenleistung zu streben – sei es in der Entwicklung innovativer Lösungen, in der Zusammenarbeit mit unseren Kunden oder im Umgang miteinander. Wir wissen: Exzellenz wird nur durch einen konstanten Verbesserungsprozess erreicht.";
+
+
 
   fourth_segment_year: string = "2010-2012";
   fourth_segment_subheader: string = "Upsie!";
