@@ -69,4 +69,10 @@ export class HistoryPageComponent {
   fourth_segment_text_0: string ="In diesem Jahr traf schwerer Rückschlag das Unternehmen, als das Firmengebäude durch einen technischen Defekt niederbrannte. Dieser Vorfall brachte die MF-Consulting GmbH an den Rand des Ruins.";
   fourth_segment_text_1: string ="Dank des unermüdlichen Einsatzes von Markus Freisinger und seinem Team sowie der Unterstützung von Partnern und Kunden konnte das Unternehmen diese Krise überstehen. 2012 wurde das neue, moderne Firmengebäude eingeweiht – ein Symbol für die Widerstandsfähigkeit und den Fortschritt der Firma.";
 
+
+  fifth_segment_year: string = "2013-2020";
+  fifth_segment_subheader: string = "Let's go!";
+  fifth_segment_text_0: string ="Mit der Eröffnung des neuen Gebäudes begann eine Phase des starken Wachstums. 2013 überstieg der Umsatz erstmals die Marke von 50 Millionen Euro.";
+  fifth_segment_text_1: string ="Ein Teil dieses Erfolgs wurde sofort in die Gesellschaft zurückgegeben: 2,5 Millionen Euro wurden an wohltätige Einrichtungen gespendet, ein Ausdruck der sozialen Verantwortung, die tief in der Unternehmenskultur verankert ist.";
+
 }
