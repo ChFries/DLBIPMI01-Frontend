@@ -11,6 +11,7 @@ import {
 import {AccordionElementComponent} from './accordion-element/accordion-element.component';
 import {CarouselElementComponent} from './carousel-element/carousel-element.component';
 import {CardsElementComponent} from './cards-element/cards-element.component';
+import {TimelineComponent} from './timeline/timeline.component';
 
 @Component({
   selector: 'app-history-page',
@@ -25,7 +26,8 @@ import {CardsElementComponent} from './cards-element/cards-element.component';
     NgbAccordionBody,
     AccordionElementComponent,
     CarouselElementComponent,
-    CardsElementComponent
+    CardsElementComponent,
+    TimelineComponent
   ],
   templateUrl: './history-page.component.html',
   styleUrl: './history-page.component.css'
