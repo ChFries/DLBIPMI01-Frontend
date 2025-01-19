@@ -75,4 +75,9 @@ export class HistoryPageComponent {
   fifth_segment_text_0: string ="Mit der Eröffnung des neuen Gebäudes begann eine Phase des starken Wachstums. 2013 überstieg der Umsatz erstmals die Marke von 50 Millionen Euro.";
   fifth_segment_text_1: string ="Ein Teil dieses Erfolgs wurde sofort in die Gesellschaft zurückgegeben: 2,5 Millionen Euro wurden an wohltätige Einrichtungen gespendet, ein Ausdruck der sozialen Verantwortung, die tief in der Unternehmenskultur verankert ist.";
 
+  sixth_segment_year: string = "2020-????";
+  sixth_segment_subheader: string = "Quis audet adipiscitur";
+  sixth_segment_text_0: string ="Die MF-Consulting GmbH setzte ihren Wachstumskurs in den folgenden Jahren fort. Im Jahr 2020 überstieg die Mitarbeiterzahl erstmals die Hundert, und 2021 trat Timon Freisinger, der Sohn des Gründers, in den Vorstand des Unternehmens ein.";
+  sixth_segment_text_1: string ="Die Zukunft der MF-Consulting GmbH verspricht eine weitere spannende Entwicklungsphase. Für die Periode von 2025 bis 2030 ist die Einführung einer neuen Sparte für Consulting im Bereich erneuerbare Energien geplant, um den Anforderungen des Marktes und der globalen Nachhaltigkeitsagenda gerecht zu werden. Gleichzeitig plant das Unternehmen, seine Rechtsform in eine Aktiengesellschaft zu ändern, um das Wachstum weiter zu unterstützen und neue Möglichkeiten der Unternehmensentwicklung zu erschließen.";
+
 }
