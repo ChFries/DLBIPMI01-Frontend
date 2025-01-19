@@ -17,6 +17,10 @@ h2 {
   text-align: end;
 }
 
+.align-center {
+  text-align: center;
+}
+
 p {
   font-size: 1.5rem;
   color: var(--primary-color)

@@ -11,8 +11,8 @@ import {NgClass} from '@angular/common';
 })
 export class StoryElementComponent {
 
-  @Input('alignRight')
-  isRightColumn: boolean = false;
+  @Input('alignment')
+  alignment: string= "";
   @Input('year')
   year: string = "2024";
   @Input('subheader')
