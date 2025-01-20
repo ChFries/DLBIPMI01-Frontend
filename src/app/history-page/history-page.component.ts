@@ -8,6 +8,7 @@ import {TimelineComponent} from './timeline/timeline.component';
 import {RouterLink} from '@angular/router';
 import {ViewportScroller} from '@angular/common';
 import {DividerSegmentComponent} from './divider-segment/divider-segment.component';
+import {YouTubePlayer} from '@angular/youtube-player';
 
 @Component({
   selector: 'app-history-page',
@@ -19,7 +20,8 @@ import {DividerSegmentComponent} from './divider-segment/divider-segment.compone
     CardsElementComponent,
     TimelineComponent,
     RouterLink,
-    DividerSegmentComponent
+    DividerSegmentComponent,
+    YouTubePlayer
   ],
   templateUrl: './history-page.component.html',
   styleUrl: './history-page.component.css'
