@@ -1,38 +1,41 @@
 import { Component } from '@angular/core';
 import {HeaderElementComponent} from './header-element/header-element.component';
 import {StoryElementComponent} from './story-element/story-element.component';
-import {
-  NgbAccordionBody,
-  NgbAccordionButton, NgbAccordionCollapse,
-  NgbAccordionDirective,
-  NgbAccordionHeader,
-  NgbAccordionItem
-} from '@ng-bootstrap/ng-bootstrap';
 import {AccordionElementComponent} from './accordion-element/accordion-element.component';
 import {CarouselElementComponent} from './carousel-element/carousel-element.component';
 import {CardsElementComponent} from './cards-element/cards-element.component';
 import {TimelineComponent} from './timeline/timeline.component';
+import {RouterLink} from '@angular/router';
+import {ViewportScroller} from '@angular/common';
+import {DividerSegmentComponent} from './divider-segment/divider-segment.component';
 
 @Component({
   selector: 'app-history-page',
   imports: [
     HeaderElementComponent,
     StoryElementComponent,
-    NgbAccordionDirective,
-    NgbAccordionItem,
-    NgbAccordionButton,
-    NgbAccordionHeader,
-    NgbAccordionCollapse,
-    NgbAccordionBody,
     AccordionElementComponent,
     CarouselElementComponent,
     CardsElementComponent,
-    TimelineComponent
+    TimelineComponent,
+    RouterLink,
+    DividerSegmentComponent
   ],
   templateUrl: './history-page.component.html',
   styleUrl: './history-page.component.css'
 })
 export class HistoryPageComponent {
+
+  constructor(readonly viewportScroller: ViewportScroller) {
+  }
+
+  scrollToTimeline(){
+    this.viewportScroller.scrollToAnchor("timeline");
+  }
+
+  scrollToVideo() {
+    this.viewportScroller.scrollToAnchor("video");
+  }
 
   first_segment_year: string = "2003";
   first_segment_subheader: string = "Ein neuer Anfang";

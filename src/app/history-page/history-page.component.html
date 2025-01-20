@@ -1,6 +1,17 @@
 <div class="container">
   <app-header-element/>
   <div class="row mt-5">
+    <div class="col-lg text-center">
+      <p>PSSST für die Eiligen:</p>
+      <span>
+        Unsere Geschichte gibts als
+        <a [routerLink]="'/history'" fragment="timeline" (click)=scrollToTimeline()>kompakte Timeline</a>
+        und auch als
+        <a>Video</a>
+      </span>
+    </div>
+  </div>
+  <div class="row mt-5">
     <div class="col-lg">
       <img src="section-1.webp" class="img-fluid" style="border-radius: 50%;" alt="">
     </div>
@@ -8,6 +19,7 @@
       <app-story-element [alignment]="'right'" [year]=first_segment_year [subheader]=first_segment_subheader
                          [textbodyLeft]=first_segment_text_0 [textbodyRight]=first_segment_text_1></app-story-element>
     </div>
+    <app-divider-segment arrowDirection="left" />
     <div class="row mt-5">
       <div class="col-lg">
         <app-story-element [year]=second_segment_year [subheader]=second_segment_subheader
@@ -45,6 +57,7 @@
         </div>
       </div>
     </div>
+    <app-divider-segment arrowDirection="left"/>
     <div class="row mt-5">
       <div class="col-lg">
         <app-story-element [year]=fourth_segment_year [subheader]=fourth_segment_subheader
@@ -54,6 +67,7 @@
         <app-carousel-element/>
       </div>
     </div>
+    <app-divider-segment arrowDirection="right"/>
     <div class="row mt-5">
       <div class="col-lg order-lg-last">
         <app-story-element alignment="right" [year]=fifth_segment_year [subheader]=fifth_segment_subheader
@@ -63,6 +77,7 @@
         <img src="heart.jpg" class="img-fluid" style="border-radius: 50%;" alt="Heart">
       </div>
     </div>
+    <app-divider-segment arrowDirection="left"/>
     <div class="row mt-5">
       <div class="col-lg">
         <app-story-element [year]=sixth_segment_year [subheader]=sixth_segment_subheader
@@ -73,7 +88,7 @@
       </div>
     </div>
     <div class="row mt-5">
-      <div class="col-lg">
+      <div class="col-lg" id="timeline">
         <app-timeline/>
       </div>
     </div>
