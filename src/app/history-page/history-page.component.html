@@ -4,10 +4,10 @@
     <div class="col-lg text-center">
       <p>PSSST für die Eiligen:</p>
       <span>
-        Unsere Geschichte gibts als
-        <a [routerLink]="'/history'" fragment="timeline" (click)=scrollToTimeline()>kompakte Timeline</a>
+        Unsere Geschichte gibts als kompakte
+        <a [routerLink]="'/history'" fragment="timeline" (click)=scrollToTimeline()>Timeline</a>
         und auch als
-        <a>Video</a>
+        <a [routerLink]="'/history'" fragment="video" (click)=scrollToVideo()>Video</a>
       </span>
     </div>
   </div>
