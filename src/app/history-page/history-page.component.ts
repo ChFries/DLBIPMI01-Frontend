@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild} from '@angular/core';
 import {HeaderElementComponent} from './header-element/header-element.component';
 import {StoryElementComponent} from './story-element/story-element.component';
 import {AccordionElementComponent} from './accordion-element/accordion-element.component';
@@ -26,11 +26,31 @@ import {YouTubePlayer} from '@angular/youtube-player';
   templateUrl: './history-page.component.html',
   styleUrl: './history-page.component.css'
 })
-export class HistoryPageComponent {
+export class HistoryPageComponent implements AfterViewInit{
 
-  constructor(readonly viewportScroller: ViewportScroller) {
+  @ViewChild('youtubePlayerContainer') playerContainer!: ElementRef<HTMLDivElement>;
+
+  videoHeight: number | undefined;
+  videoWidth: number | undefined;
+
+  constructor(readonly viewportScroller: ViewportScroller, readonly changeDetectorRef: ChangeDetectorRef) {
   }
 
+  ngAfterViewInit(): void {
+    this.onResize();
+    window.addEventListener("resize", this.onResize.bind(this));
+    }
+
+  onResize(): void {
+    // you can remove this line if you want to have wider video player than 1200px
+    this.videoWidth = Math.min(
+      this.playerContainer.nativeElement.clientWidth,
+      640
+    );
+    // so you keep the ratio
+    this.videoHeight = this.videoWidth * 0.6;
+    this.changeDetectorRef.detectChanges();
+  }
   scrollToTimeline(){
     this.viewportScroller.scrollToAnchor("timeline");
   }
