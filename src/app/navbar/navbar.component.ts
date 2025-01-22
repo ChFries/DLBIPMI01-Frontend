@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import {NgbDropdown, NgbDropdownItem, NgbDropdownMenu, NgbDropdownToggle} from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbCollapse,
+  NgbDropdown,
+  NgbDropdownItem,
+  NgbDropdownMenu,
+  NgbDropdownToggle
+} from '@ng-bootstrap/ng-bootstrap';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
@@ -10,12 +16,14 @@ import {RouterLink, RouterLinkActive} from '@angular/router';
     NgbDropdownItem,
     NgbDropdownToggle,
     RouterLinkActive,
-    RouterLink
+    RouterLink,
+    NgbCollapse
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  isMenuCollapsed = true;
 
   notImplemented() {
     alert("not Implemented");
