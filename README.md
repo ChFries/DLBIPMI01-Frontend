@@ -1,5 +1,10 @@
 # DLBIPMI01Frontend
 
+## Notice
+
+The frontend might run into issues on certain mobile displays or with forced darkmode settings. It is highly recommended to use defaults when accessing the page
+
+
 This provides the Frontend required for the Module DLBIPMI01 - Projekt Medieninformatik
 
 ## To run the Frontend locally a recent nodejs and npm installation is required
